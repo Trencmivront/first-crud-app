@@ -7,8 +7,9 @@ import lombok.Setter;
 @Entity
 public class Users {
 
+    // Getters and setters will be automatically defined thanks to Lombok
     @Getter
-    @Id
+    @Id // Id is a generated value
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
